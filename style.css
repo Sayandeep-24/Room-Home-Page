@@ -25,13 +25,39 @@
     padding-left : 3em;
     position : absolute;
 }
+a, .navbar-buttons
+{
+    cursor: pointer;
+}
 .navbar-buttons
 {
     color : white;
     font-weight: 500;
     font-size : 0.8em;
+    padding : 0;
+    border : none;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;  
 }
 
+.navbar-buttons:after 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    transform-origin: center;
+    transition: transform 0.3s ease-out;
+}
+.navbar-buttons:hover:after 
+{
+    transform: scaleX(0.6);
+}
 .main-text
 {
     padding : 3% 6%;
@@ -70,7 +96,10 @@
     font-size : 1em;
     padding-right : 2em;
 }
-
+.shop-link:hover
+{
+    color: hsl(0, 0%, 27%);
+}
 .icon-arrow
 {
     max-width : 60px;
@@ -87,6 +116,11 @@
     background-color: black;
     padding : 28px 30px;
     border : none;
+}
+.arrow-btn:hover
+{
+    background-color :hsl(0, 0%, 27%);
+    transition: background-color 0.2s linear;
 }
 
 
