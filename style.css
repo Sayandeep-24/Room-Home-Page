@@ -298,6 +298,10 @@ a, .navbar-buttons
 }
 @media(max-width :500px)
 {
+    .arrow-btn-mobile:hover
+    {
+        background-color : black;
+    }
     .left-box
     {
       background-image: url('images/mobile-image-hero-1.jpg')  ;
@@ -386,12 +390,6 @@ a, .navbar-buttons
     }
 
 }
-
-
-@media (hover: none) {
-    .arrow-btn-mobile {
-        background-color: black;
-    }
 }
 
 
