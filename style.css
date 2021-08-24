@@ -274,7 +274,7 @@ a, .navbar-buttons
     {
         padding-top : 5em;
         padding-bottom : 3em;
-        padding-left : 3em;
+        padding-left : 2em;
     }
     .bottom-text
     {
@@ -302,7 +302,7 @@ a, .navbar-buttons
     {
       background-image: url('images/mobile-image-hero-1.jpg')  ;
       min-height : 360px;
-      min-width : 400px;
+      min-width : 100%;
       background-repeat: round;
     }
     .left-box-image-2-mobile
@@ -334,7 +334,7 @@ a, .navbar-buttons
     }
     .bottom-left-image-container, .bottom-right-image-container
     {
-        min-width : 400px;
+        min-width : 100%;
 
     }
     .bottom-text
@@ -356,7 +356,7 @@ a, .navbar-buttons
 {
     .logo
     {
-        left : 140px;
+        left : 34%;
     }
     .hamburger
     {
@@ -367,6 +367,7 @@ a, .navbar-buttons
         opacity : 0;
         right : 400px;
         transition : 0.6s;
+        padding-left: 50px;
     }
     .cross
     {
@@ -387,5 +388,10 @@ a, .navbar-buttons
 }
 
 
+@media (hover: none) {
+    .arrow-btn-mobile {
+        background-color: black;
+    }
+}
 
 
