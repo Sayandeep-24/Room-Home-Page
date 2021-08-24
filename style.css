@@ -170,11 +170,6 @@ a, .navbar-buttons
     padding : 28px 30px;
     border : none;
 }
-.arrow-btn:hover
-{
-    background-color :hsl(0, 0%, 27%);
-    transition: background-color 0.2s linear;
-}
 
 
 .toggle-arrow-box-mobile
@@ -228,6 +223,18 @@ a, .navbar-buttons
     min-height : 300px;
     background-repeat: round;
 }
+@media (hover: hover) {
+    .arrow-btn:hover
+    {
+        background-color :hsl(0, 0%, 27%);
+        transition: background-color 0.2s linear;
+    }
+  }
+  
+
+
+
+
 @media(min-width : 1440px)
 {
     .left-box
