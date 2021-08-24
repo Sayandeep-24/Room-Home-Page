@@ -24,38 +24,39 @@
 <body>
   <div class='container-fluid main g-0'>
     <div class='row g-0 upper-container'>
-      <div class='col g-0 left-box'>
+      <div class='col g-0 left-box '>
+
+        <div class='row hamburger'>
+        </div>
+
+        <div class='row logo'>
+          <div class='col'>
+            <a><img src='images/logo.svg' ></a>  
+          </div>
+        </div>
 
         <div class='row navbar'>
-          <div class='col-3'>
-            <a><img src='images/logo.svg'></a>  
-          </div>
-          <div class='col-1'>
+          <div class='col navbar-buttons-container'>
             <button class='navbar-buttons'>home</button>
-            <!--Make these buttons-->
           </div>
-          <div class='col-1'>
+          <div class='col navbar-buttons-container'>
             <button class='navbar-buttons'>shop</button>
-
-            
           </div>
-          <div class='col-1'>
-            <button class='navbar-buttons'>about</button>
-
-            
+          <div class='col navbar-buttons-container'>
+            <button class='navbar-buttons'>about</button>   
           </div>
-          <div class='col-1'>
+          <div class='col navbar-buttons-container'>
             <button class='navbar-buttons'>contact</button>            
           </div>
         </div>
 
-        <div class='toggle-arrow-box-mobile'><button class='arrow-btn-mobile'>
+        <div class='toggle-arrow-box-mobile'><button class='arrow-btn-mobile' id='button-left-mobile'>
             <img src='images/icon-angle-left.svg'>
-          </button><button class='arrow-btn-mobile'>
+          </button><button class='arrow-btn-mobile' id='button-right-mobile'>
             <img src='images/icon-angle-right.svg'>
           </button>
         </div>
-         
+
 
 
       </div>
@@ -77,9 +78,9 @@
             </span>
           </div>
         </div>
-        <div class='toggle-arrow-box'><button class='arrow-btn'>
+        <div class='toggle-arrow-box'><button class='arrow-btn' id='button-left'>
             <img src='images/icon-angle-left.svg'>
-          </button><button class='arrow-btn'>
+          </button><button class='arrow-btn' id='button-right'>
             <img src='images/icon-angle-right.svg'>
           </button>
         </div>
@@ -113,6 +114,7 @@
 
   </div>
 
+  <script src="script.js" defer></script>
 
 
 </body>
@@ -127,7 +129,6 @@
         Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
         store locator. Any questions? Don't hesitate to contact us today.
 
-        Shop now
 
         Manufactured with the best materials
 
@@ -135,6 +136,5 @@
         to ensure that every product is made as perfect and as consistent as possible. With three decades of
         experience in this industry, we understand what customers want for their home and office.
 
-        Shop now
 
 -->
