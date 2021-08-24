@@ -386,6 +386,10 @@ a, .navbar-buttons
     {
         color : black;
     }
+    .bottom-text
+    {
+        padding : 3em 3em;
+    }
 
 }
 }
