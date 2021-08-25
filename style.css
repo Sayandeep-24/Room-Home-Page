@@ -302,18 +302,18 @@ a, .navbar-buttons
 {
     .left-box
     {
-      background-image: url('images/mobile-image-hero-1.jpg')  ;
+      background-image: url('images/mobile-image-hero-1.webp')  ;
       min-height : 360px;
       min-width : 100%;
       background-repeat: round;
     }
     .left-box-image-2-mobile
     {
-        background-image: url('images/mobile-image-hero-2.jpg');
+        background-image: url('images/mobile-image-hero-2.webp');
     }
     .left-box-image-3-mobile
     {
-        background-image: url('images/mobile-image-hero-3.jpg');
+        background-image: url('images/mobile-image-hero-3.webp');
 
     }
 
