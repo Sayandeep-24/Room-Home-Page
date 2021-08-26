@@ -351,15 +351,11 @@ a, .navbar-buttons
     {
         font-size: 0.7em;
     }
-
-
-}
-@media(max-width :400px)
-{
     .logo
     {
-        left : 34%;
+        left : 36%;
     }
+
     .hamburger
     {
         opacity : 1;
@@ -369,7 +365,7 @@ a, .navbar-buttons
         opacity : 0;
         right : 400px;
         transition : 0.6s;
-        padding-left: 50px;
+        padding-left: 6em;
     }
     .cross
     {
@@ -386,9 +382,23 @@ a, .navbar-buttons
     {
         color : black;
     }
+
+
+
+}
+@media(max-width :400px)
+{
     .bottom-text
     {
         padding : 3em 3em;
+    }
+    .logo
+    {
+        left : 34%;
+    }
+    .navbar 
+    {
+        padding-left: 50px;
     }
 
 }
