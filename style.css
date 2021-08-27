@@ -17,7 +17,7 @@ body
 .left-box
 {
     position : relative;
-    background-image:  url('images/desktop-image-hero-1.jpg');
+    background-image:  url('images/desktop-image-hero-1.webp');
     min-height : 533px;
     min-width : 58.3%;
     background-repeat: no-repeat;
@@ -25,12 +25,12 @@ body
 }
 .left-box-image-2
 {
-    background-image: url('images/desktop-image-hero-2.jpg');
+    background-image: url('images/desktop-image-hero-2.webp');
     transition : .5s;
 }
 .left-box-image-3
 {
-    background-image: url('images/desktop-image-hero-3.jpg');
+    background-image: url('images/desktop-image-hero-3.webp');
     transition : .5s;
 }
 
