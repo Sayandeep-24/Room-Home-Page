@@ -19,6 +19,8 @@ hamburger = document.querySelector('.hamburger');
 logo = document.querySelector('.logo');
 body = document.querySelector('body');
 btnsMobile = document.querySelector(".toggle-arrow-box-mobile");
+container = document.querySelector('#container');
+
 
 
 let count = 0;
@@ -34,6 +36,7 @@ hamburger.addEventListener('click',function()
     body.classList.toggle("scroll-disable");
 
     btnsMobile.classList.toggle("arrow-btn-mobile-opacity");
+    container.classList.toggle("button-blocker");
 
     count++;
     if(count%2===0)
