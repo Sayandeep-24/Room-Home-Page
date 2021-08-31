@@ -18,6 +18,8 @@ navbar_buttons = document.querySelectorAll('.navbar-buttons');
 hamburger = document.querySelector('.hamburger');
 logo = document.querySelector('.logo');
 body = document.querySelector('body');
+btnsMobile = document.querySelector(".toggle-arrow-box-mobile");
+
 
 let count = 0;
 hamburger.addEventListener('click',function()
@@ -30,6 +32,9 @@ hamburger.addEventListener('click',function()
     hamburger.classList.toggle("cross");
     logo.classList.toggle("logo-visibility");
     body.classList.toggle("scroll-disable");
+
+    btnsMobile.classList.toggle("arrow-btn-mobile-opacity");
+
     count++;
     if(count%2===0)
     {
