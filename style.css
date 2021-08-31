@@ -6,7 +6,8 @@ body
 .scroll-disable
 {
     overflow-y:hidden;
-    height:90vh;
+    height:100vh;
+    min-height: -webkit-fill-available;
     position: relative;
 }
 .container
