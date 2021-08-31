@@ -3,10 +3,11 @@ body
     min-height : 100vh;
     background-color: white;
 }
-.body-scroll-disable
+.scroll-disable
 {
     overflow-y:hidden;
     height:100%;
+    position: relative;
 }
 .container
 {
