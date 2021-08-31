@@ -16,6 +16,18 @@ hamburger = document.querySelector('.hamburger');
 logo = document.querySelector('.logo');
 //body = document.querySelector('body');
 
+function preventDefault(e){
+    e.preventDefault();
+}
+
+function disableScroll(){
+    document.body.addEventListener('touchmove', preventDefault, { passive: false });
+}
+function enableScroll(){
+    document.body.removeEventListener('touchmove', preventDefault, { passive: false });
+}
+
+
 let count = 0;
 hamburger.addEventListener('click',function(){
     navbar.classList.toggle("nav-mobile");
@@ -29,12 +41,12 @@ hamburger.addEventListener('click',function(){
     count++;
     if(count%2===0)
     {
-        enableScrolling();
+        enableScroll();
         console.log("Second");
     }
     else
     {
-        disableScrolling();
+        disableScroll();
         console.log("First");
     }
 })
