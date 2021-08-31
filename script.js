@@ -6,7 +6,6 @@ hamburger = document.querySelector('.hamburger');
 logo = document.querySelector('.logo');
 body = document.querySelector('body');
 
-
 hamburger.addEventListener('click',function(){
     navbar.classList.toggle("nav-mobile");
     navbar_buttons.forEach(function(navbar_button)
@@ -15,7 +14,7 @@ hamburger.addEventListener('click',function(){
     });
     hamburger.classList.toggle("cross");
     logo.classList.toggle("logo-visibility");
-    body.classList.toggle("body-color-change");
+    body.classList.toggle("body-scroll-disable");
 })
 
 //Changing images on clicking arrow
