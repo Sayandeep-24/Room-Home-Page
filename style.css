@@ -397,13 +397,13 @@ a, .navbar-buttons
     }
     #button-left-mobile
     {
-        border-width: 1px 0 2px 1px; 
+        border-width: 1px 0 1px 1px; 
         border-style: solid;
         border-color : hsl(0, 0%, 92%); 
     }
     #button-right-mobile
     {
-        border-width: 1px 1px 2px 1px; 
+        border-width: 1px 1px 1px 1px; 
         border-style: solid;
         border-color : hsl(0, 0%, 92%); 
     }
