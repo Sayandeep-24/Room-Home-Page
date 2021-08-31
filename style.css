@@ -2,14 +2,16 @@ body
 {
     min-height : 100vh;
     background-color: white;
+    scroll-behavior: smooth;
 }
+/*
 .scroll-disable
 {
-    overflow-y:hidden;
-    height:100vh;
-    height: calc(var(--vh, 1vh) * 100);
     position: relative;
+    overflow-y:hidden;
+    height:100%;
 }
+*/
 .container
 {
     font-size : 12px;

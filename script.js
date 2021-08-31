@@ -1,26 +1,22 @@
-// For mobile jump view height problem
-
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-
-function appHeight() {
-    const doc = document.documentElement;
-    doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
-  }
-
-  window.addEventListener('resize', appHeight);
-  appHeight();
-
-
 //Sliding Navigation Bar
+function enableScrolling()
+{
+    window.onscroll=function(){};
+}
+function disableScrolling()
+{   
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+}
 
 navbar = document.querySelector('.navbar');
 navbar_buttons = document.querySelectorAll('.navbar-buttons');
 hamburger = document.querySelector('.hamburger');
 logo = document.querySelector('.logo');
-main = document.querySelector('.main');
+//body = document.querySelector('body');
 
+let count = 0;
 hamburger.addEventListener('click',function(){
     navbar.classList.toggle("nav-mobile");
     navbar_buttons.forEach(function(navbar_button)
@@ -29,7 +25,18 @@ hamburger.addEventListener('click',function(){
     });
     hamburger.classList.toggle("cross");
     logo.classList.toggle("logo-visibility");
-    main.classList.toggle("scroll-disable");
+    //body.classList.toggle("scroll-disable");
+    count++;
+    if(count%2===0)
+    {
+        enableScrolling();
+        console.log("Second");
+    }
+    else
+    {
+        disableScrolling();
+        console.log("First");
+    }
 })
 
 //Changing images on clicking arrow
