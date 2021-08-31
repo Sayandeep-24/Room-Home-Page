@@ -4,14 +4,12 @@ body
     background-color: white;
     scroll-behavior: smooth;
 }
-/*
 .scroll-disable
 {
     position: relative;
     overflow-y:hidden;
     height:100%;
 }
-*/
 .container
 {
     font-size : 12px;
@@ -388,10 +386,25 @@ a, .navbar-buttons
     {
         color : black;
     }
+    .arrow-btn-mobile
+    {
+        padding : 1em 1.5em;
+        background-color: transparent;
+    }
+    #button-left-mobile
+    {
+        border-width: 1px 0 2px 1px; 
+        border-style: solid;
+        border-color : hsl(0, 5%, 82%); 
 
 
-
-}
+    }
+    #button-right-mobile
+    {
+        border-width: 1px 2px 2px 1px; 
+        border-style: solid;
+        border-color : hsl(0, 5%, 82%); 
+    }
 @media(max-width :400px)
 {
     .bottom-text

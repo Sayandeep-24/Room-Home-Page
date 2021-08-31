@@ -1,35 +1,27 @@
 //Sliding Navigation Bar
-function enableScrolling()
+
+function preventDefault(e)
 {
-    window.onscroll=function(){};
+    e.preventDefault();
 }
-function disableScrolling()
-{   
-    var x=window.scrollX;
-    var y=window.scrollY;
-    window.onscroll=function(){window.scrollTo(x, y);};
+function disableScroll()
+{
+    document.body.addEventListener('touchmove', preventDefault, { passive: false });
+}
+function enableScroll()
+{
+    document.body.removeEventListener('touchmove', preventDefault, { passive: false });
 }
 
 navbar = document.querySelector('.navbar');
 navbar_buttons = document.querySelectorAll('.navbar-buttons');
 hamburger = document.querySelector('.hamburger');
 logo = document.querySelector('.logo');
-//body = document.querySelector('body');
-
-function preventDefault(e){
-    e.preventDefault();
-}
-
-function disableScroll(){
-    document.body.addEventListener('touchmove', preventDefault, { passive: false });
-}
-function enableScroll(){
-    document.body.removeEventListener('touchmove', preventDefault, { passive: false });
-}
-
+body = document.querySelector('body');
 
 let count = 0;
-hamburger.addEventListener('click',function(){
+hamburger.addEventListener('click',function()
+{
     navbar.classList.toggle("nav-mobile");
     navbar_buttons.forEach(function(navbar_button)
     { 
@@ -37,7 +29,7 @@ hamburger.addEventListener('click',function(){
     });
     hamburger.classList.toggle("cross");
     logo.classList.toggle("logo-visibility");
-    //body.classList.toggle("scroll-disable");
+    body.classList.toggle("scroll-disable");
     count++;
     if(count%2===0)
     {
